@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "ctime": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "cstdlib": "cpp",
+        "sstream": "cpp"
     }
 }

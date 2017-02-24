@@ -24,20 +24,27 @@
 using namespace std;
 
 /*     
-    problem: journey to the moon
-    category: algorithm/graph_theory
-    tag: dfs, graph_theory
-    url: https://www.hackerrank.com/challenges/journey-to-the-moon
+    problem: 
+        journey to the moon
+    category: 
+        algorithm/graph_theory
+    tag: 
+        dfs, graph_theory
+    url: 
+        https://www.hackerrank.com/challenges/journey-to-the-moon
     description:
         You must find all pair of astronauts of different country, 
-        where astronauts of the same countries are denoted by the graph P(N, I).
+        where astronauts of the same countries are denoted by the graph
+        P(N, I).
     solution:
-        Use DFS to find all the forrest(astronauts of the same country) in the graph then
-        for each forrest length Fi we calculate F1xF2 + (F1 + F2)xF3 + ... + (F1 + ... + Fi-1)xFi
+        Use DFS to find all the forrest(astronauts of the same country) in the 
+        graph then for each forrest length Fi we calculate
+        F1xF2 + (F1 + F2)xF3 + ... + (F1 + ... + Fi-1)xFi
     tutorials:
-        https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/lecture-14-depth-first-search-dfs-topological-sort/
-        https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-006-introduction-to-algorithms-fall-2011/lecture-videos/MIT6_006F11_lec14.pdf
+        https://goo.gl/ZJfbFW
+        https://goo.gl/sDAuMk
 */
+
 map<int,int> parent;
 
 int dfs_visit(vector<vector<int >> &adj, int v) {
